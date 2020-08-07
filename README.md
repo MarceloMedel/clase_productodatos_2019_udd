@@ -8,13 +8,23 @@
 ## Antes de empezar
 
 - Para poder realizar este laboratorio se necesita una cuenta en [GitHub](https://www.github.com/) y [Heroku](https://www.heroku.com/). Ambas son gratuitas y les serán muy útiles en el futuro.
-- Se asume que el computador de cada estudiante tiene Python y Jupyter Notebook instalados (requisitos de varios cursos anteriores del programa). Si no es el caso, recomiendo seguir algún tutorial como esta [guía para instalar Jupyter Notebook en Windows 10](https://medium.com/@kswalawage/install-python-and-jupyter-notebook-to-windows-10-64-bit-66db782e1d02).
+- Adicionalmente se asume que en el computador o máquina virtual donde se realizará el laboratorio está instalado Python y Jupyter Notebook o Jupyter Lab.
+- Se recomienda generar un ambiente con Anaconda con las librerías descritas mas abajo. [Managing environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 ## Instalación de librerías necesarias
+
+### Primero creamos el ambiente con conda
+```
+conda create -n image_classification python=3.6
+````
 
 ### Pytorch
 
 - Seguir las [instrucciones oficiales](https://pytorch.org/get-started/locally/) seleccionando el sistema operativo correspondiente.
+- Para este caso se utiliza un MacBook Pro, por tanto se debe ejecutar el siguiente comando para instalar la versión estable 
+```
+conda install pytorch torchvision -c pytorch
+```
 
 ### fastai [(instrucciones)](https://docs.fast.ai/install.html)
 ```
@@ -58,3 +68,10 @@ pip install Flask
 ## Créditos
 
 - La construcción del modelo está basada en las clases de [Francisco Ingham y Jeremy Howard](https://github.com/fastai/course-v3/blob/master/nbs/dl1/lesson2-download.ipynb). La aplicacion web está inspirada en el trabajo de [Shankar Jha](https://github.com/shankarj67/Water-classifier-fastai).
+
+
+
+```
+export FLASK_APP=app.py
+export LC_ALL=en_US.UTF-8
+```
