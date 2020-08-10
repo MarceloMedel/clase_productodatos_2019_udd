@@ -60,7 +60,11 @@ def upload():
 
         # Make prediction
         preds = model_predict(file_path)
-        return preds
+        if preds == 'sin-proteccion':
+            return('La persona de la foto no tiene protección')
+        else:
+            #return preds
+            return(f'La persona tiene {preds}')
     return None
 
 
