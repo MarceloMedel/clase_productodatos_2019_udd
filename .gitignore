@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# FastAI save
+.pth
+
 # C extensions
 *.so
 
