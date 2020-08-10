@@ -10,6 +10,7 @@
 - Para poder realizar este laboratorio se necesita una cuenta en [GitHub](https://www.github.com/) y [Heroku](https://www.heroku.com/). Ambas son gratuitas y les serán muy útiles en el futuro.
 - Adicionalmente se asume que en el computador o máquina virtual donde se realizará el laboratorio está instalado Python y Jupyter Notebook o Jupyter Lab.
 - Se recomienda generar un ambiente con Anaconda con las librerías descritas mas abajo. [Managing environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+- El notebook donde se desarrolló el modelo lo puedes encontrar acá --> https://github.com/MarceloMedel/clase_productodatos_2019_udd/blob/master/ejemplo_clasificador_fastai.ipynb
 
 ## Instalación de librerías necesarias
 
